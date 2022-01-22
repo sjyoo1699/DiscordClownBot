@@ -33,5 +33,12 @@ dependencies {
     implementation 'com.google.guava:guava:29.0-jre'
 }
 
+jar {
+	manifest {
+		attributes 'Main-Class' : 'DiscordClownBot.BotMain'
+	}
+	archiveName "DiscordClownBot.jar"
+}
+
 task stage(dependsOn: ['build', 'clean'])
 build.mustRunAfter clean
