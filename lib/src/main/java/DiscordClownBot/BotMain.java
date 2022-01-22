@@ -24,7 +24,7 @@ public class BotMain extends ListenerAdapter
     public static void main(String[] args)
             throws LoginException
     {
-        JDA jda = JDABuilder.createDefault("OTM0MjYwOTA1MDc4ODI1MDAy.YetgRQ.BlWB64lRV73_6Yu_fwbWzZHiuN8").build();
+        JDA jda = JDABuilder.createDefault(System.getenv("token")).build();
         //You can also add event listeners to the already built JDA instance
         // Note that some events may not be received if the listener is added after calling build()
         // This includes events such as the ReadyEvent
