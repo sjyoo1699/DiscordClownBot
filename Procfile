@@ -1,1 +1,1 @@
-web: java -jar lib/build/libs/DiscordClownBot.jar
+worker: java -jar DiscordClownBot.jar
