@@ -1,1 +1,1 @@
-worker: java -jar DiscordClownBot.jar
+web: java -jar DiscordClownBot.jar
